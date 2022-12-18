@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My calculator</title>
+  <link rel="stylesheet" href="./main.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+  </style>
+</head>
+<body>
+
+  <div class="app flex-center">
+    <div class="calculator">
+      <div class="header d-flex between">
+        <span class="header__time"></span>
+        <ul class="header__status flex-center">
+          <li class="d-block">
+            <img class="d-block" src="./assets/icon/network-icon.svg" alt="network">
+          </li>
+          <li class="d-block">
+            <img class="d-block" src="./assets/icon/wifi-icon.svg" alt="wifi">
+          </li>
+          <li class="d-block">
+            <img class="d-block" src="./assets/icon/battery-icon.svg" alt="battery">
+          </li>
+        </ul>
+      </div>
+      <div class="subheader">
+        <ul class="d-flex between">
+          <li class="d-block">
+            <img src="./assets/icon/menu-icon.svg" alt="menu">
+          </li>
+          <li class="d-block">
+            <img src="./assets/icon/fa-solid_history.svg" alt="hítory">
+          </li>
+        </ul>
+      </div>
+      <div class="screen">
+        <input type="text" class="screen__math">
+        <input type="text" class="screen__result">
+      </div>
+      <div class="board">
+        <button class="btn btn--ce">CE</button>
+        <button class="btn btn--dl">DL</button>
+        <button class="btn divide operation">/</button>
+        <button class="btn multi operation">*</button>
+        <button class="btn number">7</button>
+        <button class="btn number">8</button>
+        <button class="btn number">9</button>
+        <button class="btn minus operation">-</button>
+        <button class="btn number">4</button>
+        <button class="btn number">5</button>
+        <button class="btn number">6</button>
+        <button class="btn plus operation">+</button>
+        <button class="btn number">1</button>
+        <button class="btn number">2</button>
+        <button class="btn number">3</button>
+        <button class="btn equal btn--equal">=</button>
+        <button class="btn number btn--zero">0</button>
+        <button class="btn number">.</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- <script src="./main.js"></script> -->
+  <script src="./calculator.js"></script>
+
+</body>
+</html>
