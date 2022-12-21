@@ -7,6 +7,8 @@ const displayPrevious = document.querySelector('.screen__math');
 const displayCurrent  = document.querySelector('.screen__result');
 const clearBtn        = document.querySelector('.btn--ce');
 const deleteBtn       = document.querySelector('.btn--dl');
+const darkmodeBtn     = document.querySelector('.header__menu');
+const app             = document.querySelector('.app');
 
 const calculator = {
 
@@ -79,6 +81,9 @@ const calculator = {
       _this.renderDisplay();
     }
 
+    darkmodeBtn.onclick = function() {
+      app.classList.toggle('dark');
+    }
   },
 
   appendNumber: function(number) {

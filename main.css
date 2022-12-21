@@ -6,6 +6,28 @@
   font-family: 'Roboto', sans-serif;
 }
 
+
+.app.dark .calculator {
+  --color-scren-math: #fff;
+  --color-main: #fff;
+  --color-btn: #fff;
+  --color-bg-btn: #4E4E4E;
+}
+.app .calculator {
+  --color-scren-math: #707070;
+  --color-main: #000;
+  --color-btn: #707070;
+  --color-bg-btn: #F3F3F3;
+}
+
+.icon {
+  color: var(--color-main);
+}
+
+.icon-function {
+  color: var(--color-btn);
+}
+
 .d-block {
   display: block;
 }
@@ -27,18 +49,37 @@
 .app {
   height: 100vh;
   background: linear-gradient(340.73deg, rgba(86, 203, 149, 0) 5.03%, #39E394 96.89%);
+  background: linear-gradient(14deg, rgba(0,232,255,1) 11%, rgba(57,227,148,1) 41%);
+
 }
 
 .calculator {
   width: 390px;
-  height: 844px;
-  padding: 0 20px;
+  height: auto;
+  padding: 0 20px 20px;
   border-radius: 18px;
-  background: linear-gradient(168.16deg, #424242 0%, rgba(66, 66, 66, 0.4) 99.69%)
+  backdrop-filter: blur(25px);
+  box-shadow: 7px 7px 20px rgba(255, 255, 255, 0.25);
+  background: linear-gradient(167.95deg, #FBFBFB 0%, rgba(251, 251, 251, 0.2) 100%);
+  border: 1px solid #FFFFFF;
+}
+
+.app.dark .calculator {
+  box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(168.16deg, #424242 0%, rgba(66, 66, 66, 0.4) 99.69%);
+  border: 1px solid #424242;
 }
 
 .header {
   padding: 12px 0;
+}
+
+.header__time {
+  font-size: 13px;
+  line-height: 28px;
+  font-weight: 700;
+  color: var(--color-main);
+  margin-left: 14px;
 }
 
 .header__status li {
@@ -57,7 +98,7 @@
   margin-top: 67px;
   font-size: 37px;
   line-height: 43px;
-  color: #707070;
+  color: var(--color-scren-math);
   height: 43px;
 }
 
@@ -65,9 +106,9 @@
   margin-top: 13px;
   font-size: 106px;
   line-height: 124px;
-  color: #000;
+  color: var(--color-main);
   height: 124px;
-  direction: RTL;
+  direction: LTR;
 }
 
 .board {
@@ -78,12 +119,18 @@
 }
 
 .btn {
-  padding: 16px;
-  background: #fff;
+  padding: 17px;
+  color: var(--color-btn);
+  background: var(--color-bg-btn);
   border-radius: 16px;
   font-size: 36px;
   line-height: 42px;
   border: none;
+}
+
+.btn:hover {
+  background: #56CB95;
+  color: #fff;
 }
 
 .btn--equal {
