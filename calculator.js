@@ -1,4 +1,4 @@
-
+//  Calculator width object
 
 const numberBtns      = document.querySelectorAll('.number');
 const operationBtns   = document.querySelectorAll('.operation');
@@ -84,6 +84,7 @@ const calculator = {
     darkmodeBtn.onclick = function() {
       app.classList.toggle('dark');
     }
+
   },
 
   appendNumber: function(number) {
